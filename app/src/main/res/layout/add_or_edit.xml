@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetData"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Measured: "
+        android:textColor="#814343"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/date_measured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@android:drawable/ic_menu_day"
+        />
+
+    <!-- Time measured -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Measured: "
+        android:layout_gravity="center_horizontal"
+        android:textColor="#814343"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="17dp"
+
+        />
+
+    <Button
+        android:id="@+id/time_measured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time measured"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+    <!-- Systolic Pressure Measured -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Systolic Pressure (mm Hg):"
+        android:textColor="#814343"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/systolic_pressure_measured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:hint="Please enter a non-negative integer"
+
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Diastolic Pressure (mm Hg):"
+        android:textColor="#814343"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/diastolic_pressure_measured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:hint="Please enter a non-negative integer"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Heart Rate (Beats per Minute):"
+        android:textColor="#814343"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        />
+
+    <EditText
+        android:id="@+id/heart_rate_measured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:hint="Please enter a non-negative integer"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Comments:"
+        android:textColor="#814343"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/comment_written"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:hint="20 Characters Maximum"
+        android:inputType="textAutoCorrect"
+        android:maxLength="20"
+        android:gravity="center_horizontal"
+        />
+</LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#814343"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:onClick="saveButtonClick"
+        />
+</RelativeLayout>

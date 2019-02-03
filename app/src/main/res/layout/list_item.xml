@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginBottom="5dp">
+
+
+    <ImageView
+        android:id="@+id/item_info"
+        android:layout_width="47dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_menu_edit" />
+
+
+    <TextView
+        android:id="@+id/date_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="23"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/date_heading"
+
+        />
+
+
+    <TextView
+        android:id="@+id/systolic_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Systolic Pressure: "
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/date_text_view"
+        />
+
+    <TextView
+        android:id="@+id/systolic_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="23"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/systolic_heading"
+        android:layout_below="@id/date_text_view"/>
+
+
+    <TextView
+        android:id="@+id/diastolic_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diastolic Pressure: "
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/systolic_text_view"/>
+
+    <TextView
+        android:id="@+id/diastolic_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="23"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/systolic_text_view"
+        android:layout_toRightOf="@id/diastolic_heading"/>
+
+
+    <TextView
+        android:id="@+id/heartRate_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate: "
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/diastolic_text_view"/>
+
+    <TextView
+        android:id="@+id/heart_rate_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="23"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/heartRate_heading"
+        android:layout_below="@id/diastolic_text_view"/>
+
+
+</RelativeLayout>
